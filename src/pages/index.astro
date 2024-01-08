@@ -1,18 +1,17 @@
 ---
-import { getEntryBySlug, getCollection } from "astro:content";
+import { getEntryBySlug } from "astro:content";
 import { Image } from "astro:assets";
 import PageLayout from "../layouts/PageLayout.astro";
 import PublicationDate from "../components/PublicationDate.astro";
+import { getSortedBlogPosts } from "../utils";
 
 const about = await getEntryBySlug("about", "about");
 const { Content } = await about.render();
 
-const articles = (await getCollection("blog")).sort(
-  (a, b) => b.data.publicationDate.valueOf() - a.data.publicationDate.valueOf()
-);
+const articles = await getSortedBlogPosts(); 
 ---
 
-<PageLayout title="aurora" description="Minimalistic blog theme built with Astro, focused on accessibility and usability.">
+<PageLayout title="Welcome" description="Minimalistic blog theme built with Astro, focused on accessibility and usability.">
   <Content />
   <h2 id="blog">
     <a class="heading-linker" href="#blog">Blog</a>  
@@ -22,7 +21,7 @@ const articles = (await getCollection("blog")).sort(
       articles.map((article) => (
         <article>
           <header>
-            <Image src={article.data.cover} alt={article.data.coverAlt} /> 
+            <Image class="article-img" src={article.data.cover} alt={article.data.coverAlt} /> 
           </header>
           <div class="article-content">
             <PublicationDate publicationDate={article.data.publicationDate} />
@@ -38,6 +37,12 @@ const articles = (await getCollection("blog")).sort(
 </PageLayout>
 
 <style>
+  .article-img {
+    max-height: 300px;
+    object-fit: cover;
+    object-position: 100% 30%;
+  }
+
   .article-grid {
     display: grid;
     gap: var(--size-7);

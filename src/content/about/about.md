@@ -1,28 +1,9 @@
-## About
+## Welcome to my Blog
 
-aurora is a minimal blog theme built with Astro, Svelte and plain CSS. It is focused on accessibility and usability.
+You can call me by multiple names. My current chosen name within the Github space is `Komefumi`, and it's very special to me. `Arjun` is my name in real life, and it's very important. As well as another chosen name, `Hafiz`. For me, names are quite relevant.
 
-All the interactiveness of the website is packed into three dropdowns that are located at the right of the top navigation bar. Every menu can be opened with a simple keyboard shortcut:
+In this blog I wish to share my thoughts, and useful insights from my journey through programming, succeeding in life in a spiritual and meaningful way, as well as any sentiments I might wish to share. One thing I hope to do is to inspire people to become independent and to have what they truly value, through my journey, beginning with my own personal redemption.
 
-- Table of contents: **Shift + c**
-- Search for an article: **Shift + s**
-- Theme toggle: **Shift + t**
-- Close menu: Escape (**Esc**)
+This blog will be frequently updated. You can consider this a constant work in progress.
 
-The styles are simple, there are small improvements for some elements to keep everything consistent and responsive.
-
-### Table of contents
-
-Secondary headings (`<h2>`) are listed here, so each page is easy to navigate.
-
-### Search
-
-I wrote a simple algorithm for the search, and the matching works well. You can write the blog title words in any order, leave letters out, have multiple spaces between words, and more.
-
-### Theme toggle
-
-There are three websites themes: Light, Dark and System (inherits the theme of your browser or operating system).
-
-### Make the theme yours
-
-See the [documentation on how to adjust the theme](https://github.com/thiloho/aurora#make-the-theme-yours).
+I have made use of [this theme](https://github.com/thiloho/aurora#make-the-theme-yours) for Astro. Note that it makes use of svelte.

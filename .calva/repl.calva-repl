@@ -1,0 +1,79 @@
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: REPL Sessions*
+;    (Click the session indicator in the status bar to open it)
+(require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]])
+cljs꞉user꞉> 
+(+ 3 4)
+cljs꞉app.core꞉> 
+(ns app.core
+  (:require [reagent.dom.client :as rdom]))
+cljs꞉app.core꞉> 
+(ns app.core
+  (:require [reagent.dom.client :as rdom]))
+cljs꞉app.core꞉> 
+(ns app.core
+  (:require [reagent.dom.client :as rdom]))
+cljs꞉app.core꞉> 
+(ns app.core
+  (:require [reagent.dom.client :as rdom]))
+cljs꞉app.core꞉> 
+(defn init []
+  (render)
+  (println "App initialized!"))
+cljs꞉app.core꞉> 
+(ns app.core
+  (:require [reagent.dom.client :as rdom]))
+
+
+;; A simple Reagent component using Hiccup syntax (Clojure data structure vectors instead of HTML)
+(defn hello-component []
+  [:div
+   [:h1 {:style {:color "#5f7fbf"}} "Hello, ClojureScript!"]
+   [:p "Welcome to your beginner-friendly Reagent setup."]])
+
+;; This function mounts your component to the DOM
+(defn render []
+  (let [root-el (.getElementById js/document "app")]
+    (rdom/render [hello-component] root-el)))
+
+;; The entry point specified in shadow-cljs.edn
+(defn init []
+  (render)
+  (println "App initialized!"))
+cljs꞉app.core꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: REPL Sessions*
+;    (Click the session indicator in the status bar to open it)
+(require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]])
+cljs꞉user꞉> 
+(ns app.core
+  (:require [reagent.dom.client :as rdom]))
+cljs꞉app.core꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: REPL Sessions*
+;    (Click the session indicator in the status bar to open it)
+(require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]])
+cljs꞉user꞉> 
+(defonce react-root (atom nil))
+cljs꞉app.core꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: REPL Sessions*
+;    (Click the session indicator in the status bar to open it)
+(require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]])
+cljs꞉user꞉> 
+cljs꞉app.core꞉> 
+(when-let [requires (resolve 'clojure.main/repl-requires)] (clojure.core/apply clojure.core/require @requires))
+clj꞉shadow.user꞉> 
+; TIPS: You can choose which REPL to use (clj or cljs):
+;    *Calva: REPL Sessions*
+;    (Click the session indicator in the status bar to open it)
+(require '[cljs.repl :refer [apropos dir doc find-doc print-doc pst source]])
+cljs꞉user꞉> 
